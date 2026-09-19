@@ -155,3 +155,10 @@ debounce and EMI/RFI resiliency:
 The KiCad project is
 link:attiny13a-quasi-ic.kicad_pro[attiny13a-quasi-ic.kicad_pro],
 in this directory.  KiCad version 10.0.5 was used.
+
+
+== Build Reports
+
+  * [Dynamic Haircut v2.0](https://forum.pedalpcb.com/threads/dynamic-haircut-v2-0-barber-gain-changer.29479/post-393071)
+  * [Old Fashioned v2.0](https://forum.pedalpcb.com/threads/old-fashioned-skreddy-animals-major-overdrive.28763/post-395652)
+
