@@ -63,41 +63,43 @@ component side.
 
 | 1
 | JACK_IN
-| Signal input, from the input jack.  Goes to the input buffer.
+| Signal input, from the input jack; goes to the input buffer
 
 | 2, 4, 8
 | GND
-| Ground.
+| Ground (0-volt)
 
 | 3
 | +9V
-| Supply input.  The module has a reverse-polarity shunt diode (D2)
-and a 22 Ω series resistor (R5) on this pin.
+| Supply input; the module has a reverse-polarity shunt diode (D2)
+and a 22 Ω series resistor (R5) on this pin
 
 | 5
 | EFFECT_PCB_IN
 | Buffered signal to the effect circuit's input, switched by the
-TMUX4053 and AC-coupled (C10).
+TMUX4053 and AC-coupled (C10)
 
 | 6
 | FOOTSW_RAW
-| Momentary, normally-open footswitch to ground.  The pull-up, ferrite
-bead, RC filter and ESD protection are on the module.
+| Momentary, normally-open footswitch to ground; the pull-up, ferrite
+bead, RC filter and ESD protection are on the module
 
 | 7
 | LED_CATHODE
 | Status LED cathode, switched to ground by Q3 through a 4.7 kΩ
 resistor (R26) on the module.  Connect the LED's anode to the supply;
-the parent PCB needs no LED resistor.
+the parent PCB _may_ need additional current-limiting resistance,
+depending on desired LED brightness and/or LED type (I typically add
+an additional 3.3 kΩ for ultrabright/high-efficiency LEDs)
 
 | 9
 | EFFECT_PCB_OUT
-| The effect circuit's output, returning to the module.  AC-coupled
-(C9).
+| The effect circuit's output, returning to the module; AC-coupled
+(C9)
 
 | 10
 | JACK_OUT
-| Buffered signal output, to the output jack.
+| Buffered signal output, to the output jack
 |===
 
 // TODO: supply voltage range and typical current draw.
