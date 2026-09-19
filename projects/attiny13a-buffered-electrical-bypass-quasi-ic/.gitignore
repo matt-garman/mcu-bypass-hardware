@@ -1,0 +1,5 @@
+# kicad history junk
+.history/
+
+# old schematic
+*.kicad_sch_old
