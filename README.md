@@ -1,3 +1,4 @@
+<!-- SPDX-License-Identifier: CERN-OHL-P-2.0 -->
 
 # MCU Hardware for Switch Debounce and Electric Instrument Effects Switching
 
@@ -10,6 +11,7 @@ instrument effects (e.g. guitar effect pedals) bypass switching.
 Many of these schemes rely on a microcontroller to act as the
 "brains" of the switching scheme; see the other repo for MCU
 firmware.
+
 
 ## License
 
@@ -28,6 +30,7 @@ whoever receives the design files or a product built from them. The
 designs are provided as-is, WITHOUT ANY WARRANTY; see the
 [license](LICENSE) for the actual terms.
 
+
 ## Credit (appreciated, not required)
 
 If you use these designs or the firmware in something you build, and
@@ -42,4 +45,8 @@ For example:
 You have my permission to use my name this way to credit these
 projects. Please don't word it in a way that suggests I endorse, or
 was involved with, your product.
+
+## Projects
+
+  - [projects/attiny13a-buffered-electrical-bypass-quasi-ic.adoc](projects/attiny13a-buffered-electrical-bypass-quasi-ic.adoc)
 
