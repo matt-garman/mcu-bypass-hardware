@@ -37,7 +37,7 @@ quasi-iC.
 
 link:attiny13a-buffered-electrical-bypass-quasi-ic/attiny13a-quasi-ic.pdf[Downloadable PDF]
 
-image:attiny13a-buffered-electrical-bypass-quasi-ic/attiny13a-quasi-ic.svg
+image::attiny13a-buffered-electrical-bypass-quasi-ic/attiny13a-quasi-ic.svg[opts=inline]
 
 
 == Design Overview
