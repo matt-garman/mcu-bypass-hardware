@@ -11070,6 +11070,19 @@
 			(justify left bottom mirror)
 		)
 	)
+	(gr_text "© 2026 Matthew Garman\nCERN-OHL-P-2.0\nhttps://github.com/matt-garman/mcu-bypass-hardware"
+		(at 193.75 133.25 0)
+		(layer "B.SilkS")
+		(uuid "bc7b854b-43ed-4fb7-998c-1f784e5068e9")
+		(effects
+			(font
+				(size 1 0.75)
+				(thickness 0.14)
+				(bold yes)
+			)
+			(justify left bottom mirror)
+		)
+	)
 	(dimension
 		(type orthogonal)
 		(layer "Dwgs.User")
