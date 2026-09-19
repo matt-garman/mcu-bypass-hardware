@@ -4,3 +4,8 @@
 # clade code
 .claude/
 
+# generated schematic exports and ERC reports (make)
+build/
+
+# commit message drafts
+/commit_msg.txt
