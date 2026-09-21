@@ -22,9 +22,10 @@ The differences are:
     hardware-specific details.
   * This PCB design is much smaller, with a 43x16mm footprint
   * This design is a 4-layer PCB, whereas the other is 2-layer
-  * This PCB uses a single row of pin headers, with the idea of
-    supporting vertical mounting (i.e. perpendicular to the parent
-    effect PCB)
+  * This PCB uses a single row of pin headers to enable _vertical_
+    mounting (i.e. perpendicular to the parent PCB) using
+    right-angle pin headers (credit to
+    link:https://www.diystompboxes.com/smfforum/index.php?msg=1312371[RG Keen for the suggestion])
 
 
 == Schematic
