@@ -104,4 +104,5 @@ in this directory.  KiCad version 10.0.5 was used.
 == Build Reports
 
   * link:https://forum.pedalpcb.com/threads/nashville-nobility-custom-nobels-odr-1bc.30339/[Nashville Nobility]
+  * link:https://forum.pedalpcb.com/threads/the-enchanter-custom-timmy-jan-ray.30400/[The Enchanter]
 
