@@ -9,3 +9,6 @@ build/
 
 # commit message drafts
 /commit_msg.txt
+
+# kicad "hints" file
+*.kicad_prl
