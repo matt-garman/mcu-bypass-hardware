@@ -50,4 +50,5 @@ was involved with, your product.
 
   - [projects/attiny13a-buffered-electrical-bypass-quasi-ic](projects/attiny13a-buffered-electrical-bypass-quasi-ic/)
   - [projects/attiny202-buffered-electrical-bypass-quasi-ic](projects/attiny202-buffered-electrical-bypass-quasi-ic/)
+  - [projects/attiny13a-relay-bypass-quasi-ic](projects/attiny13a-relay-bypass-quasi-ic)
 
