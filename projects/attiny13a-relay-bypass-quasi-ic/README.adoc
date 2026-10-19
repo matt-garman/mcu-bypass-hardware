@@ -21,7 +21,7 @@ This module's key differences are:
   * This project uses through-hole components, and is therefore
     physically larger
   * While the project has "ATtiny13A" in the name, it actually uses
-    one of three microcontrollers from the the "AVR Classic" family;
+    any of three microcontrollers from the the "AVR Classic" family;
     specifically, firmware exists for ATtiny13A, ATtiny45, and
     ATtiny85 (the firmware is identical for all MCUs, except in
     necessary hardware-specific details)
@@ -34,6 +34,42 @@ This module's key differences are:
   * This module has additional I/O for use as a standalone module
     with commercial/off-the-shelf (COTS) PCBs (e.g. link:https://www.pedalpcb.com/[PedalPCB] 
     or link:https://www.aionfx.com/[AionFX] 
+  * This is a "belt-and-suspenders" design (see below) that
+    decouples the MCU from the relay coil via MOSFETs and protection
+    diodes; thus, it can be easily adapted for use with other MCUs
+
+
+== Design Notes
+
+This is deliberately a "belt-and-suspenders" design.  That is, some
+may argue that the design is over-engineered with some extraneous
+parts.  Specifically: the use of the relay coil flyback protection
+diodes (D1, D3), and the coil-current-sinking MOSFETs (Q1, Q3).  In
+similar designs, the AVR MCU directly drives the relay coil,
+removing the need for the protection diodes and current-sinking
+transistors.  The AVR Classic MCU GPIO pins have built-in protection
+diodes _and_ are rated to source/sink the relay coil current.
+Similarly, it is also possible for the MCU to directly drive the
+status LED.
+
+Using the MOSFETs and protection diodes to isolate the relay coil
+from the MCU provides additional safety for the MCU, though at the
+expense of added PCB footpring and BOM cost.  Additionally, it makes
+the design trivially adaptable to other microcontrollers which may
+not have GPIO pins that are as rugged as the AVR Classic.  (MOSFET
+gates present virtually zero load, so can be trivially activated by
+practically any logic chip.)
+
+While generally we refer to the TQ-L2-5V part for the relay, the
+*TQ-L2-4.5V* is arguably the ideal part.  There is a voltage drop of
+approximately 0.7V across the MOSFETs when they are switched on.
+Therefore, the actual voltage presented to the relay coils is
+approximately 4.3V, rather than 5V.  Thus, the "4.5V" part is a
+better fit.  However, in practice, the 4.5V part is less common and
+generally more expensive.  Given that the operating margins of the
+TQ2 parts are fairly generous, the 5V part still has sufficient
+margin in this design and works reliably.  Choose the 4.5V part only
+if it's available and the cost is the same as the 5V part.
 
 
 == Schematic
