@@ -1,0 +1,33 @@
+,,,
+MCU Relay Bypass Module (True Bypass),,,
+MCU Firmware: https://github.com/matt-garman/mcu-bypass-firmware,,,
+,,,
+,,,
+Reference,Value,Footprint,Notes
+R13,100R,DIN0204 / 3.6 x 1.6 x 5.08 mm,Forms PSU filter with C1
+R29,1k,DIN0204 / 3.6 x 1.6 x 5.08 mm,Footswitch RC filter with C29
+CLR1,4k7,DIN0204 / 3.6 x 1.6 x 5.08 mm,"Current-limiting resistor, adjust to taste"
+R22,10k,DIN0204 / 3.6 x 1.6 x 5.08 mm,MCU footswitch pin pullup resistor
+R23,10k,DIN0204 / 3.6 x 1.6 x 5.08 mm,MCU reset pin pullup resistor
+R24,100k,DIN0204 / 3.6 x 1.6 x 5.08 mm,LED mosfet gate pulldown resistor
+R27,100k,DIN0204 / 3.6 x 1.6 x 5.08 mm,Relay reset mosfet gate pulldown resistor
+R30,100k,DIN0204 / 3.6 x 1.6 x 5.08 mm,Relay set mosfet gate pulldown resistor
+,,,
+C29,22nF,Box film cap 7.2 x 2.5 mm,Footswitch RC filter with R29
+C28,100nF,Ceramic X7R or box film cap 7.2 x 2.5 mm,MCU supply decoupling
+C30,470nF,Ceramic X7R or box film cap 7.2 x 2.5 mm,5v LDO supply decoupling/filtering
+C8,10uF,Ceramic X7R 7.2 x 2.5 mm,5v bulk supply decoupling
+C1,>=10uF,Ceramic X7R or Electrolytic 5mm diameter (low profile),Forms PSU filter with R13; bigger is better (as space allows)
+,,,
+D1,1N5817,DO-35,Relay coil flyback protection diode
+D2,1N5817,DO-35,Reverse polarity protection
+D3,1N5817,DO-35,Relay coil flyback protection diode
+,,,
+Q1,2N7000,TO-92,"other N-MOS ok, but mind pinout"
+Q2,2N7000,TO-92,"other N-MOS ok, but mind pinout"
+Q3,2N7000,TO-92,"other N-MOS ok, but mind pinout"
+,,,
+K1,TQ2-2L-5V,Panasonic TQ2-2L-5V or -4.5V relay,
+U1,LP2950-5.0_TO92,TO-92,5v LDO; 78L05 ok but mind pinout
+U9,ATtiny13A,DIP-8,"Can also use ATtiny45, ATtiny85"
+
