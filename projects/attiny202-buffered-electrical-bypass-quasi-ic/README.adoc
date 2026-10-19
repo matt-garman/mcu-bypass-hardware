@@ -101,6 +101,33 @@ link:attiny202-quasi-ic.kicad_pro[attiny202-quasi-ic.kicad_pro],
 in this directory.  KiCad version 10.0.5 was used.
 
 
+== Fabrication and Assembly
+
+The following files are offered for fabrication.  Caveats,
+disclaimers and warnings:
+
+  * I used these with link:JLCPCB[https://www.jlcpcb.com]; their
+    suitability for other fabricators is unknown
+  * They were generated from the KiCad project via
+    link:kicad-jlcpcb-tools[https://github.com/bouni/kicad-jlcpcb-tools]
+  * The files were generated on *August 29, 2026*; JLC/LCSC part
+    numbers were valid at that time, but are subject to change
+  * *_Some parts' orientation in the CPL file is incorrect_*; I had
+    to manually fix the orientation of most polarized parts and ICs
+    using JLC's web interface
+  * This module was designed for automated assembly; successful
+    hand-soldering is effectively impossible
+
+The files:
+
+  * link:BOM-attiny202-quasi-ic.csv[BOM-attiny202-quasi-ic.csv]:
+    Bill of Materials with LCSC part numbers
+  * link:CPL-attiny202-quasi-ic.csv[CPL-attiny202-quasi-ic.csv]:
+    Component Placement List (_see warning above_)
+  * link:GERBER-attiny202-quasi-ic.zip[GERBER-attiny202-quasi-ic.zip]:
+    Gerber files
+
+
 == Build Reports
 
   * link:https://forum.pedalpcb.com/threads/nashville-nobility-custom-nobels-odr-1bc.30339/[Nashville Nobility]
