@@ -133,7 +133,7 @@ by the relay
 | 5, 14
 | LSW
 | Status LED cathode, switched to ground by Q3 through CLR1 (a
-current-limiting resistor).
+current-limiting resistor)
 
 | 6
 | RET
@@ -147,8 +147,9 @@ by the relay
 
 | 9
 | FSW
-| Momentary, normally-open footswitch to ground; the pull-up, and RC
-filter are on the module
+| One pin of a two-pin momentary, normally-open footswitch; the
+pull-up and RC filter are on the module (the footswitch's other pin
+is tied to GND)
 
 | 15
 | +5V
