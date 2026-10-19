@@ -183,7 +183,8 @@ The files:
 
   * link:GERBER-attiny-tq2-l2-5v.zip[GERBER-attiny-tq2-l2-5v.zip]:
     Gerber files
-  * BOM coming soon
+  * link:attiny-tq2-l2-5v.BOM.csv[attiny-tq2-l2-5v.BOM.csv]: BOM (CSV format)
+  * link:attiny-tq2-l2-5v.BOM.pdf[attiny-tq2-l2-5v.BOM.pdf]: BOM (PDF format)
 
 
 == Build Reports
