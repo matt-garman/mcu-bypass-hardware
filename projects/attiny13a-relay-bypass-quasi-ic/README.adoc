@@ -123,34 +123,32 @@ and a 100-ohm series resistor (R13) on this pin
 
 | 3
 | JIN
-| Signal input, from the input jack; goes to the input buffer
+| Signal input, from the input jack; routed directly to the relay
 
 | 4
 | SND
-| Buffered signal to the effect circuit's input, switched by the
-TMUX4053 and AC-coupled (C10)
+| Signal to the effect circuit's input, either JIN or GND; switched
+by the relay
 
 | 5, 14
 | LSW
-| Status LED cathode, switched to ground by Q3 through a 4.7k-ohm
-resistor (R26) on the module.  Connect the LED's anode to the supply;
-the parent PCB _may_ need additional current-limiting resistance,
-depending on desired LED brightness and/or LED type (I typically add
-an additional 3.3k-ohm for ultrabright/high-efficiency LEDs)
+| Status LED cathode, switched to ground by Q3 through CLR1 (a
+current-limiting resistor).
 
 | 6
 | RET
-| The effect circuit's output, returning to the module; AC-coupled
-(C9)
+| The effect circuit's output, returning to the module; routed
+directly to the relay
 
 | 7
 | JACK_OUT
-| Buffered signal output, to the output jack
+| Signal output, either JIN or RET; routed directly to and switched
+by the relay
 
 | 9
 | FSW
-| Momentary, normally-open footswitch to ground; the pull-up, ferrite
-bead, RC filter and ESD protection are on the module
+| Momentary, normally-open footswitch to ground; the pull-up, and RC
+filter are on the module
 
 | 15
 | +5V
