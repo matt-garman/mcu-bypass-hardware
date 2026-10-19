@@ -166,6 +166,23 @@ link:attiny-tq2-l2-5v.kicad_pro[attiny-tq2-l2-5v.kicad_pro],
 in this directory.  KiCad version 10.0.5 was used.
 
 
+== Fabrication and Assembly
+
+The following files are offered for fabrication.  Caveats,
+disclaimers and warnings:
+
+  * I used these with link:JLCPCB[https://www.jlcpcb.com]; their
+    suitability for other fabricators is unknown
+  * They were generated from the KiCad project via
+    link:kicad-jlcpcb-tools[https://github.com/bouni/kicad-jlcpcb-tools]
+
+The files:
+
+  * link:GERBER-attiny-tq2-l2-5v.zip[GERBER-attiny-tq2-l2-5v.zip]:
+    Gerber files
+  * BOM coming soon
+
+
 == Build Reports
 
   * link:https://forum.pedalpcb.com/threads/pez-rojo-custom-menatone-red-snapper.30439/[Pez Rojo]
