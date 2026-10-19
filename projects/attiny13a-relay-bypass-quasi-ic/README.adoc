@@ -60,6 +60,10 @@ not have GPIO pins that are as rugged as the AVR Classic.  (MOSFET
 gates present virtually zero load, so can be trivially activated by
 practically any logic chip.)
 
+_Presumably_, cheaper NPN BJT transistors (such as 2n3904) can be
+used in place of the 2n7000 N-Channel MOSFETs.  *But this is
+untested*.
+
 While generally we refer to the TQ-L2-5V part for the relay, the
 *TQ-L2-4.5V* is arguably the ideal part.  There is a voltage drop of
 approximately 0.7V across the MOSFETs when they are switched on.
