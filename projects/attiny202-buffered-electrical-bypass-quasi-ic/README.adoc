@@ -132,4 +132,6 @@ The files:
 
   * link:https://forum.pedalpcb.com/threads/nashville-nobility-custom-nobels-odr-1bc.30339/[Nashville Nobility]
   * link:https://forum.pedalpcb.com/threads/the-enchanter-custom-timmy-jan-ray.30400/[The Enchanter]
+  * link:https://forum.pedalpcb.com/threads/carbon-squish-custom-diamond-compressor.30616/[Carbon Squish]
+  * link:https://forum.pedalpcb.com/threads/pez-rojo-custom-menatone-red-snapper.30439/[Pez Rojo]
 

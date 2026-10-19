@@ -157,6 +157,34 @@ link:attiny13a-quasi-ic.kicad_pro[attiny13a-quasi-ic.kicad_pro],
 in this directory.  KiCad version 10.0.5 was used.
 
 
+== Fabrication and Assembly
+
+The following files are offered for fabrication.  Caveats,
+disclaimers and warnings:
+
+  * I used these with link:JLCPCB[https://www.jlcpcb.com]; their
+    suitability for other fabricators is unknown
+  * They were generated from the KiCad project via
+    link:kicad-jlcpcb-tools[https://github.com/bouni/kicad-jlcpcb-tools]
+  * The files were generated on *August 8, 2026*; JLC/LCSC part
+    numbers were valid at that time, but are subject to change
+  * *_Some parts' orientation in the CPL file is incorrect_*; I had
+    to manually fix the orientation of most polarized parts and ICs
+    using JLC's web interface
+  * This module was designed for automated assembly; successful
+    hand-soldering is effectively impossible
+
+The files:
+
+  * link:BOM-attiny13a-quasi-ic.csv[BOM-attiny13a-quasi-ic.csv]:
+    Bill of Materials with LCSC part numbers
+  * link:CPL-attiny13a-quasi-ic.csv[CPL-attiny13a-quasi-ic.csv]:
+    Component Placement List (_see warning above_)
+  * link:GERBER-attiny13a-quasi-ic.zip[GERBER-attiny13a-quasi-ic.zip]:
+    Gerber files
+
+
+
 == Build Reports
 
   * link:https://forum.pedalpcb.com/threads/dynamic-haircut-v2-0-barber-gain-changer.29479/post-393071[Dynamic Haircut v2.0]
